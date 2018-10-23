@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Maniux-BBB</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Maniux-BBB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>javascript 生成随机验证码</title>
+      <link>/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</guid>
+      <description> canvas实现随机验证码图片小练习 通过canvas绘制验证码图片，通过在canvas区域绘制随机生成的文本字体，再增加一些干扰内容：
+写了一个简单的页面放进去啦 验证码
+js代码如下(只有生成验证图片的function )：
+function getPic(){ var cas=document.querySelector(&#39;#cas&#39;);//获取canvas 设置背景色； var ctx=cas.getContext(&#39;2d&#39;); var w=cas.width,h=cas.height; ctx.fillStyle=randomColor(150,250); ctx.fillRect(0,0,w,h); var str=&#39;abcdefghijklmnopqrstuvwxyz1234567890&#39;; for(let i=0; i&amp;lt;4; i++){//绘制随机文本； var fonts=str[randomNum(0,str.length)]; res.push(fonts); var x=w/5*i+10,y=h/10*i+30; ctx.fillStyle=randomColor(0,200); ctx.font=&#39;bold 40px Arial&#39;; ctx.fillText(fonts,x,y); } for(let i=0;i&amp;lt;200;i++){//绘制随机干扰点； ctx.beginPath(); ctx.arc(randomNum(0,w),randomNum(0,h),2,0,2*Math.PI); ctx.fillStyle=randomColor(0,200); ctx.fill(); } // res=fontt; } function randomNum(a,b){//生成(a,b)区间随机数； return Math.floor(Math.random()*(b-a)+a); } function randomColor(a,b){//生成随机rgb()颜色； var r=randomNum(a,b),g=randomNum(a,b),b=randomNum(a,b); return &#39;rgb(&#39;+r+&#39;,&#39;+g+&#39;,&#39;+b+&#39;)&#39;; }  </description>
+    </item>
+    
+    <item>
+      <title>RobotFramework 入门 学习笔记</title>
+      <link>/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>1.关于RobotFramework RobotFramework是基于Python语言的自动化测试框架，我感觉RobotFramework对新手还是极为友好的，入门还是很快就可以上手的。
+安装RobotFramework
+RobotFramework框架是Python语言开发的，所以使用需要 Python 环境
+Robot Framework可通过下载.exe 安装 进入官网下载后打开.exe即可。
+也可以通过Python的包管理工具pip安装更加方便快捷
+在Python的 site-packages目录下 执行 pip install robotframework:
+Python27\Lib\site-packages&amp;gt;pip install robotframework  安装wxPython
+在安装好RobotFramework后还需要安装 wxPyhton Python的一个库 因为ride(RobotFramework 数据编辑器)是基于此库开发的
+在官网 下载运行即可
+安装ride 在 官网 下载对应系统的ride压缩包 解压后 打开命令行在文件目录下执行如下操作：
+ &amp;gt;python setup.py install  安装完成后在命令行 运行 ride.py
+ &amp;gt;ride.py  这样ride就打开啦，可以看到界面如下图
+2使用Selenium2Library的一个小例子 首先创建一个项目，在项目下添加测试套件后就可以在测试套件下添加测试用例了，这一步的操作在下面的动图展示：
+在测试套件中添加 Selenium2Library库后就可以小小的试一下RF的小功能啦 打开百度一下 在搜索框输入【PG one】点击搜索并截图： 这个例子中的关键字都很浅显易懂也是最基础的：
+open browser &amp;mdash; 打开一个浏览器并跳转至给定的 URL；
+input text &amp;mdash; 把给定的文本内容键入到 给定的文本框 在这里 以id 作为识别找到搜索的输入框；
+click element &amp;mdash; 点击给定的元素；</description>
+    </item>
+    
+    <item>
+      <title>matplotlib 数据可视化</title>
+      <link>/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <description>matplotlib 柱状图练习 使用 requests 及BeautifulSoup 获取 旅游网站排行数据的前十位，使用 matplotlib 讲Alexa周排名用柱状图展示：
+python代码如下：
+# -*-coding:utf-8 -*- import requests from bs4 import BeautifulSoup import matplotlib.pyplot as plt def get_alexa(): # 获取旅游网站排行网页信息 url=&#39;http://top.chinaz.com/hangye/index_jiaotonglvyou_lvyou.html&#39; r=requests.get(url) res=r.content soup=BeautifulSoup(res,&#39;html.parser&#39;) # 获取榜上网站名称 x=[] name=soup.find_all(&#39;span&#39;,{&#39;class&#39;:&#39;col-gray&#39;}) for i in name: x.append(i.text) # 获取个网站的Alexa数值 div=soup.find_all(&#39;div&#39;,{&#39;class&#39;:&#39;RtCPart&#39;}) p=[] for i in div: item=i.find(&#39;p&#39;,{&#39;class&#39;:&#39;RtCData&#39;}) p.append(i) y=[] for i in p: num=int(i.find(&#39;a&#39;).text) y.append(num) # 获取排行前十 xx=tuple(x[1:11]) yy=y[0:10] # 画图 plt.title(&#39;Ranking of Alexa&#39;) r=range(1,11) plt.bar(r,yy) plt.xticks(r, xx, rotation=20) plt.</description>
+    </item>
+    
+    <item>
+      <title>python requests 获取招聘信息</title>
+      <link>/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</guid>
+      <description>获取校园网的招聘信息 前两天大概了解了一下 requests 库，写个小练习吧 获取校园就业网站的招聘信息,下面是就业网的招聘 板块的html, 先找到 所有信息的父元素 也就是 类名为 arcList 的div ,然后在这个div里找到所有的li 元素的文本信息就是想要的招聘信息啦：
+&amp;lt;div class=&amp;quot;arcList&amp;quot;&amp;gt; &amp;lt;h2 class=&amp;quot;alTitle&amp;quot;&amp;gt;招聘信息&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-10&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44392.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;和记奥普泰通信技术有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-10&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44391.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;中国航发商用航空发动机有限责任公司2017年企业开放日活动邀请函&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44388.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;众微致成（北京）信息服务有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44387.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;中国平安财产保险股份有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44386.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;国家超级计算济南中心_山东省科学院_山东省计算中心_人才引进&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44385.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;蒂森克虏伯电梯-培训生（菁才训练营）&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44384.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;电子科技大学2017年面向海内外诚聘博士后&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44383.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;西安中科光电精密工程有限公司招聘启事&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44382.</description>
+    </item>
+    
+    <item>
+      <title>webdriver 自动化测试小练习 （Python）</title>
+      <link>/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</guid>
+      <description>Selenium Webdriver  创建测试用例  写一个简单的自动化测试例子如下图 测试套件中包括一个百度搜索的测试用例和一个在输入框上传文件的测试用例：
+ BaiduSearch  实现的功能非常简单 百度搜索关键字 PG one 下面是测试用例BaiduSearch.py的具体实现：
+ # -*- coding: utf-8 -*- from selenium import webdriver import unittest,time class Bai(unittest.TestCase): &#39;&#39;&#39;baidu test&#39;&#39;&#39; def setUp(self): self.driver=webdriver.Chrome() self.driver.maximize_window() self.driver.implicitly_wait(20) print(&#39;baidu test start&#39;) def test_bai(self): &#39;&#39;&#39;keyword PG one&#39;&#39;&#39; driver=self.driver driver.get(&#39;http://www.baidu.com&#39;) driver.find_element_by_id(&#39;kw&#39;).send_keys(&#39;PG one&#39;) driver.find_element_by_id(&#39;su&#39;).click() title=driver.title driver.get_screenshot_as_file(&#39;D:\\baidu.jpg&#39;) title=driver.title try: self.assertEqual(title,u&#39;PG one_百度搜索&#39;) print (&#39;The page title:&#39;+title) except: print(title) print(&#39;Get the wrong title&#39;) def tearDown(self): self.driver.quit() print(&#39;baidu test end&#39;) if __name__==&#39;__main__&#39;: unittest.</description>
+    </item>
+    
+    <item>
+      <title>关于手工测试的小小感想</title>
+      <link>/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</guid>
+      <description>功能测试之手工测试 1.大多数人眼中的测试：
+2.程序员眼中的测试：
+3.测试的内心：</description>
+    </item>
+    
+    <item>
+      <title>javascript 实现双色球</title>
+      <link>/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</guid>
+      <description> 双色球规则 1-33红球抽六个，1-16蓝球抽一个：
+嗯，买张彩票 没中！ 写了一个简单的页面放进去啦 双色球
+js代码如下：
+function getNum(){ var red=[],blue=[],res=[]; for (let i=1;i&amp;lt;34;i++){ red.push(i); } for (let i=1;i&amp;lt;17;i++){ blue.push(i); } for(let i=0;i&amp;lt;6;i++){ n=32-i; k=Math.ceil(Math.random()*n+0); res.push(red[k]); red.splice(k,1) } res.sort((a,b)=&amp;gt;(a-b)); k2=Math.ceil(Math.random()*15+0); res.push(blue[k2]); return res } console.log(getNum());  </description>
+    </item>
+    
+    <item>
+      <title>海盗派测试读书笔记</title>
+      <link>/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>gitment 项目地址gitment 膜拜大神非常简单好用的评论方式</description>
+    </item>
+    
+  </channel>
+</rss>

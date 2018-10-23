@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>python requests 获取招聘信息</title>
+        <style>
+
+    html body {
+        font-family: 'Mina', sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    :root {
+        --accent: #2d2026;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/lakeside-light.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+<script>
+$(document).ready(function(){
+    
+  var input = $('#night-mode-toggle');
+  var container = $('#bigbody');
+  var stat = $('#button-status');
+  
+  container.toggleClass(localStorage.toggled);
+  stat.bootstrapToggle(localStorage.button).change();
+  
+  input.on('click', function() {
+      if (localStorage.toggled != "-nightmode" ) {
+          container.toggleClass("-nightmode", true );
+          localStorage.toggled = "-nightmode";
+          localStorage.button = "on";
+       } else {
+          container.toggleClass("-nightmode", false );
+          localStorage.toggled = "";
+          localStorage.button = "off"
+       }
+  })
+});
+</script>
+ <meta name="generator" content="Hugo 0.49.2" />
+        
+        
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <meta property="og:title" content="python requests 获取招聘信息">
+    <meta property="og:type" content="article">
+      
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:image" content="/favicon/android-chrome-192x192.png" >
+      
+    <meta property="description" content="">
+    <meta property="og:description" content="">
+    
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:site" content="">
+    
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body id = "bigbody">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">python requests 获取招聘信息</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                                <li><a href="/tags/">Tags</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:nathancday@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/NathanCDay"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/natedayta/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/nathan-day-59b48435/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/users/5878751/nate"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                            <li id="night-mode-toggle">
+    <input type="checkbox" id = "button-status"
+        data-toggle="toggle"
+        data-width = "10"
+        data-height = "1"
+        data-on="<i class='fa fa-moon-o fa-lg' style='vertical-align:25%'></i>"
+        data-off= "<i class='fa fa-sun-o fa-lg' style='vertical-align:25%'></i>"
+        data-style="ios"
+        data-onstyle = "default">
+</li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+      
+    
+
+    <h4><a href="/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/">python requests 获取招聘信息</a></h4>
+    <h5>July 10, 2017 - 2 minutes</h5>
+    <h5></h5>
+
+    
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h2 id="获取校园网的招聘信息">获取校园网的招聘信息</h2>
+
+<p>前两天大概了解了一下 requests 库，写个小练习吧
+获取校园就业网站的招聘信息,下面是就业网的招聘 板块的html, 先找到 所有信息的父元素 也就是 类名为 arcList 的div ,然后在这个div里找到所有的li 元素的文本信息就是想要的招聘信息啦：</p>
+
+<pre><code>&lt;div class=&quot;arcList&quot;&gt;
+         	&lt;h2 class=&quot;alTitle&quot;&gt;招聘信息&lt;/h2&gt;
+            &lt;ul&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-10&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44392.html&quot; target=&quot;_blank&quot;&gt;和记奥普泰通信技术有限公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-10&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44391.html&quot; target=&quot;_blank&quot;&gt;中国航发商用航空发动机有限责任公司2017年企业开放日活动邀请函&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44388.html&quot; target=&quot;_blank&quot;&gt;众微致成（北京）信息服务有限公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44387.html&quot; target=&quot;_blank&quot;&gt;中国平安财产保险股份有限公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44386.html&quot; target=&quot;_blank&quot;&gt;国家超级计算济南中心_山东省科学院_山东省计算中心_人才引进&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44385.html&quot; target=&quot;_blank&quot;&gt;蒂森克虏伯电梯-培训生（菁才训练营）&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44384.html&quot; target=&quot;_blank&quot;&gt;电子科技大学2017年面向海内外诚聘博士后&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44383.html&quot; target=&quot;_blank&quot;&gt;西安中科光电精密工程有限公司招聘启事&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44382.html&quot; target=&quot;_blank&quot;&gt;浪潮信息2018届暑期实习 (2018届)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44381.html&quot; target=&quot;_blank&quot;&gt;扬州大学2017年人才招聘公告&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44380.html&quot; target=&quot;_blank&quot;&gt; 北京华油博联信息技术有限公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-07&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44379.html&quot; target=&quot;_blank&quot;&gt;西南医科大学2017年诚聘海内外英才&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44378.html&quot; target=&quot;_blank&quot;&gt;东北林业大学&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44377.html&quot; target=&quot;_blank&quot;&gt;嘉应学院&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44376.html&quot; target=&quot;_blank&quot;&gt;南京金肯职业技术学院&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44375.html&quot; target=&quot;_blank&quot;&gt;蓝港互动集团实习生招聘&amp;amp;nbsp;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44374.html&quot; target=&quot;_blank&quot;&gt;中国信息通信研究院西部分院西安办事处&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44373.html&quot; target=&quot;_blank&quot;&gt;福建中公教育&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44372.html&quot; target=&quot;_blank&quot;&gt;湖州师范学院2017年诚聘高层次人才（教师）公告&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44371.html&quot; target=&quot;_blank&quot;&gt;中国信息通信研究院西部分院西安办事处&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-05&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44370.html&quot; target=&quot;_blank&quot;&gt;潍柴动力股份有限公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-03&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44369.html&quot; target=&quot;_blank&quot;&gt;西安新东方培训学校&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-03&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44368.html&quot; target=&quot;_blank&quot;&gt;北京北斗天辰科技有限公司&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-03&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44367.html&quot; target=&quot;_blank&quot;&gt;湖北蔚蓝国际航空学校股份有限公司飞行员招聘简章&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;time&quot;&gt;2017-07-03&lt;/span&gt;&lt;img src=&quot;/image/aa.gif&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;a href=&quot;/html/zpxx/jobs/44366.html&quot; target=&quot;_blank&quot;&gt;西安紫光国芯半导体有限公司嵌入式实习生招聘简章&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;                
+         &lt;/div&gt;
+</code></pre>
+
+<p>以下是具体的实现，通过requests get 到就业信息网的html结构，然后查找所有 div.arcList下li元素的文本内容 写入 info.txt:</p>
+
+<pre><code># -*-coding:utf-8 -*-
+from bs4 import BeautifulSoup 
+import requests
+import codecs
+
+def get_job_info():
+    url='http://job.xidian.edu.cn/html/zpxx/jobs/list_3_2.html'
+    res=requests.get(url)
+    info=res.content
+    soup=BeautifulSoup(info,'html.parser')
+    content=codecs.open('info.txt','w','utf-16')
+    for div in soup.find_all('div',{'class':'arcList'}):
+        for li in div.find_all('li'):
+            cc=li.text
+            content.write(cc+'\n')
+    content.close()
+if __name__=='__main__':
+    get_job_info()
+</code></pre>
+
+<p>打开 info.txt 可以看到获取的招聘信息 包括时间和单位名称：</p>
+
+<p><img src="https://github.com/ManiuX/imageSrc/blob/master/pc.png?raw=true" width=600px height=400px></p>
+</div>
+
+    
+    
+
+    
+
+    
+
+</main>
+
+        <footer id = "bigfooter">
+            <div style = "padding:15px;">
+                <p>Powered by <a href="https://gohugo.io">Hugo</a>. Themed by <a href="https://github.com/nathancday/min_night">min_night</a>.
+                </p>
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"
+                title="Creative Commons Attribution 4.0 International license">
+                <i class="fa fa-creative-commons" aria-hidden="true"></i> Attribution 4.0 International license
+                </a>
+            </div>
+        </footer>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', '');
+        </script>
+       
+    </body>
+
+</html>
+
