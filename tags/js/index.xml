@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Js on Maniux-BBB</title>
-    <link>/tags/js/</link>
-    <description>Recent content in Js on Maniux-BBB</description>
+    <title>Js on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/js/</link>
+    <description>Recent content in Js on Maniux-learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/tags/js/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://maniux.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Project 2</title>
-      <link>/project/project2/</link>
+      <link>https://maniux.github.io/project/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project2/</guid>
+      <guid>https://maniux.github.io/project/project2/</guid>
       <description></description>
     </item>
     

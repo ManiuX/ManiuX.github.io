@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotframework on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/robotframework/</link>
+    <description>Recent content in Robotframework on Maniux-learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://maniux.github.io/tags/robotframework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RobotFramework 入门 学习笔记</title>
+      <link>https://maniux.github.io/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>1.关于RobotFramework RobotFramework是基于Python语言的自动化测试框架，我感觉RobotFramework对新手还是极为友好的，入门还是很快就可以上手的。
+安装RobotFramework
+RobotFramework框架是Python语言开发的，所以使用需要 Python 环境
+Robot Framework可通过下载.exe 安装 进入官网下载后打开.exe即可。
+也可以通过Python的包管理工具pip安装更加方便快捷
+在Python的 site-packages目录下 执行 pip install robotframework:
+Python27\Lib\site-packages&amp;gt;pip install robotframework  安装wxPython
+在安装好RobotFramework后还需要安装 wxPyhton Python的一个库 因为ride(RobotFramework 数据编辑器)是基于此库开发的
+在官网 下载运行即可
+安装ride 在 官网 下载对应系统的ride压缩包 解压后 打开命令行在文件目录下执行如下操作：
+ &amp;gt;python setup.py install  安装完成后在命令行 运行 ride.py
+ &amp;gt;ride.py  这样ride就打开啦，可以看到界面如下图
+2使用Selenium2Library的一个小例子 首先创建一个项目，在项目下添加测试套件后就可以在测试套件下添加测试用例了，这一步的操作在下面的动图展示：
+在测试套件中添加 Selenium2Library库后就可以小小的试一下RF的小功能啦 打开百度一下 在搜索框输入【PG one】点击搜索并截图： 这个例子中的关键字都很浅显易懂也是最基础的：
+open browser &amp;mdash; 打开一个浏览器并跳转至给定的 URL；
+input text &amp;mdash; 把给定的文本内容键入到 给定的文本框 在这里 以id 作为识别找到搜索的输入框；
+click element &amp;mdash; 点击给定的元素；</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maniux-BBB</title>
-    <link>/</link>
-    <description>Recent content on Maniux-BBB</description>
+    <title>Maniux-learning</title>
+    <link>https://maniux.github.io/</link>
+    <description>Recent content on Maniux-learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://maniux.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Project 1</title>
-      <link>/project/project1/</link>
+      <link>https://maniux.github.io/project/project1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project1/</guid>
+      <guid>https://maniux.github.io/project/project1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project 2</title>
-      <link>/project/project2/</link>
+      <link>https://maniux.github.io/project/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project2/</guid>
+      <guid>https://maniux.github.io/project/project2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project 3</title>
-      <link>/project/project3/</link>
+      <link>https://maniux.github.io/project/project3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project3/</guid>
+      <guid>https://maniux.github.io/project/project3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project 4</title>
-      <link>/project/project4/</link>
+      <link>https://maniux.github.io/project/project4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/project4/</guid>
+      <guid>https://maniux.github.io/project/project4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript 生成随机验证码</title>
-      <link>/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</link>
+      <link>https://maniux.github.io/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</link>
       <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</guid>
+      <guid>https://maniux.github.io/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</guid>
       <description> canvas实现随机验证码图片小练习 通过canvas绘制验证码图片，通过在canvas区域绘制随机生成的文本字体，再增加一些干扰内容：
 写了一个简单的页面放进去啦 验证码
 js代码如下(只有生成验证图片的function )：
@@ -61,10 +61,10 @@ function getPic(){ var cas=document.querySelector(&#39;#cas&#39;);//获取canvas
     
     <item>
       <title>RobotFramework 入门 学习笔记</title>
-      <link>/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>https://maniux.github.io/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://maniux.github.io/2017/07/25/robotframework-%E5%85%A5%E9%97%A8-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>1.关于RobotFramework RobotFramework是基于Python语言的自动化测试框架，我感觉RobotFramework对新手还是极为友好的，入门还是很快就可以上手的。
 安装RobotFramework
 RobotFramework框架是Python语言开发的，所以使用需要 Python 环境
@@ -86,10 +86,10 @@ click element &amp;mdash; 点击给定的元素；</description>
     
     <item>
       <title>matplotlib 数据可视化</title>
-      <link>/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>https://maniux.github.io/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>https://maniux.github.io/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description>matplotlib 柱状图练习 使用 requests 及BeautifulSoup 获取 旅游网站排行数据的前十位，使用 matplotlib 讲Alexa周排名用柱状图展示：
 python代码如下：
 # -*-coding:utf-8 -*- import requests from bs4 import BeautifulSoup import matplotlib.pyplot as plt def get_alexa(): # 获取旅游网站排行网页信息 url=&#39;http://top.chinaz.com/hangye/index_jiaotonglvyou_lvyou.html&#39; r=requests.get(url) res=r.content soup=BeautifulSoup(res,&#39;html.parser&#39;) # 获取榜上网站名称 x=[] name=soup.find_all(&#39;span&#39;,{&#39;class&#39;:&#39;col-gray&#39;}) for i in name: x.append(i.text) # 获取个网站的Alexa数值 div=soup.find_all(&#39;div&#39;,{&#39;class&#39;:&#39;RtCPart&#39;}) p=[] for i in div: item=i.find(&#39;p&#39;,{&#39;class&#39;:&#39;RtCData&#39;}) p.append(i) y=[] for i in p: num=int(i.find(&#39;a&#39;).text) y.append(num) # 获取排行前十 xx=tuple(x[1:11]) yy=y[0:10] # 画图 plt.title(&#39;Ranking of Alexa&#39;) r=range(1,11) plt.bar(r,yy) plt.xticks(r, xx, rotation=20) plt.</description>
@@ -97,20 +97,39 @@ python代码如下：
     
     <item>
       <title>python requests 获取招聘信息</title>
-      <link>/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</link>
+      <link>https://maniux.github.io/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</link>
       <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</guid>
+      <guid>https://maniux.github.io/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</guid>
       <description>获取校园网的招聘信息 前两天大概了解了一下 requests 库，写个小练习吧 获取校园就业网站的招聘信息,下面是就业网的招聘 板块的html, 先找到 所有信息的父元素 也就是 类名为 arcList 的div ,然后在这个div里找到所有的li 元素的文本信息就是想要的招聘信息啦：
 &amp;lt;div class=&amp;quot;arcList&amp;quot;&amp;gt; &amp;lt;h2 class=&amp;quot;alTitle&amp;quot;&amp;gt;招聘信息&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-10&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44392.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;和记奥普泰通信技术有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-10&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44391.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;中国航发商用航空发动机有限责任公司2017年企业开放日活动邀请函&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44388.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;众微致成（北京）信息服务有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44387.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;中国平安财产保险股份有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44386.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;国家超级计算济南中心_山东省科学院_山东省计算中心_人才引进&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44385.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;蒂森克虏伯电梯-培训生（菁才训练营）&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44384.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;电子科技大学2017年面向海内外诚聘博士后&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44383.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;西安中科光电精密工程有限公司招聘启事&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44382.</description>
     </item>
     
     <item>
+      <title>Selenium webdriver 元素定位</title>
+      <link>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</guid>
+      <description>页面元素定位 归纳一下selenium 定位页面元素的方法：
+以百度首页的搜索框为例 &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;s_ipt&amp;quot; name=&amp;quot;wd&amp;quot; id=&amp;quot;kw&amp;quot; maxlength=&amp;quot;100&amp;quot; autocomplete=&amp;quot;off&amp;quot;&amp;gt;  1.find_element_by_id:
+id 是页面中元素的唯一标示符，也就是在一个html结构中同一个id只允许出现一次，定位起来还是比较方便的 这里要通过id定位搜索框 就是 find_element_by_id(&amp;lsquo;kw&amp;rsquo;) 2.find_element_by_name:
+name 属性用来指定标签的名称，在同一个表单中 同一name只允许出现一次，着了input 的name属性为&amp;rsquo;wd&amp;rsquo;,通过name定位 就是 find_element_by_name(&amp;lsquo;wd&amp;rsquo;) 3.find_element_by_xpath:
+xpath相对其他几种方法较为复杂也非常的强大 后面会再做笔记 这里通过xpath 定位搜索框使用 find_element_by_xpath(&amp;lsquo;//*[@id=&amp;ldquo;kw&amp;rdquo;]&amp;lsquo;) 4.find_element_by_link_text:
+link_text 一般针对超链接标签
+&amp;lt;a href=&amp;quot;http://www.hao123.com&amp;quot; target=&amp;quot;_blank&amp;quot; class=&amp;quot;mnav&amp;quot;&amp;gt;hao123&amp;lt;/a&amp;gt;  这个链接的文本为 hao123 所以可以使用 find_element_by_link_text(&amp;lsquo;hao123&amp;rsquo;) 来定位到此链接元素 5.find_element_by_partial_link_text:
+这个方法与上边的区别就是 文本信息只要是 链接文本的子集就可以查找到 例如 find_element_by_partial_link_text(&amp;lsquo;hao&amp;rsquo;) 6.find_element_by_class_name:
+这个任然以百度搜索为例 class为元素的类名 而类名一般是多个元素 属于同一类，使用类名定位可能会定位到多个元素 find_element_by_class_name(&amp;rsquo;s_ipt&amp;rsquo;) 7.find_element_by_tag_name:
+tagname位元素的标签名 往往在html中 同一个标签会出现多次 ，所以使用标签名也会定位到一组多个元素 find_element_by_tag_name(&amp;lsquo;input&amp;rsquo;) 8.find_element_by_css_selector:
+css选择器 同样设计到 通过 id,class 等多种方法 使用比较方便 这里简单的写一下 css 通过 class 定位 对于css 选择器的笔记以后再补吧：</description>
+    </item>
+    
+    <item>
       <title>webdriver 自动化测试小练习 （Python）</title>
-      <link>/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</link>
+      <link>https://maniux.github.io/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</guid>
+      <guid>https://maniux.github.io/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</guid>
       <description>Selenium Webdriver  创建测试用例  写一个简单的自动化测试例子如下图 测试套件中包括一个百度搜索的测试用例和一个在输入框上传文件的测试用例：
  BaiduSearch  实现的功能非常简单 百度搜索关键字 PG one 下面是测试用例BaiduSearch.py的具体实现：
  # -*- coding: utf-8 -*- from selenium import webdriver import unittest,time class Bai(unittest.TestCase): &#39;&#39;&#39;baidu test&#39;&#39;&#39; def setUp(self): self.driver=webdriver.Chrome() self.driver.maximize_window() self.driver.implicitly_wait(20) print(&#39;baidu test start&#39;) def test_bai(self): &#39;&#39;&#39;keyword PG one&#39;&#39;&#39; driver=self.driver driver.get(&#39;http://www.baidu.com&#39;) driver.find_element_by_id(&#39;kw&#39;).send_keys(&#39;PG one&#39;) driver.find_element_by_id(&#39;su&#39;).click() title=driver.title driver.get_screenshot_as_file(&#39;D:\\baidu.jpg&#39;) title=driver.title try: self.assertEqual(title,u&#39;PG one_百度搜索&#39;) print (&#39;The page title:&#39;+title) except: print(title) print(&#39;Get the wrong title&#39;) def tearDown(self): self.driver.quit() print(&#39;baidu test end&#39;) if __name__==&#39;__main__&#39;: unittest.</description>
@@ -118,10 +137,10 @@ python代码如下：
     
     <item>
       <title>关于手工测试的小小感想</title>
-      <link>/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</link>
+      <link>https://maniux.github.io/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</guid>
+      <guid>https://maniux.github.io/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</guid>
       <description>功能测试之手工测试 1.大多数人眼中的测试：
 2.程序员眼中的测试：
 3.测试的内心：</description>
@@ -129,10 +148,10 @@ python代码如下：
     
     <item>
       <title>javascript 实现双色球</title>
-      <link>/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</link>
+      <link>https://maniux.github.io/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</link>
       <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</guid>
+      <guid>https://maniux.github.io/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</guid>
       <description> 双色球规则 1-33红球抽六个，1-16蓝球抽一个：
 嗯，买张彩票 没中！ 写了一个简单的页面放进去啦 双色球
 js代码如下：
@@ -140,12 +159,18 @@ function getNum(){ var red=[],blue=[],res=[]; for (let i=1;i&amp;lt;34;i++){ red
     </item>
     
     <item>
-      <title>海盗派测试读书笔记</title>
-      <link>/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <title>海盗派测试分析读书笔记</title>
+      <link>https://maniux.github.io/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>gitment 项目地址gitment 膜拜大神非常简单好用的评论方式</description>
+      <guid>https://maniux.github.io/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>海盗派测试分析：MFQ&amp;amp;PPDCS 《海盗派测试分析》是我的buddy推荐给我的必读书单其中的一本，卡哇伊的封面，有趣的书名，和书中简单的插图都让这本书读起来不是那么的晦涩，书中提到的MFQ框架的总结还是非常受用的。
+这为我们在做测试的时候由整体的细节的理论去分析提供了简洁清晰的思路。
+这本书中的五个话题都围绕着需求展开进行，与那些上来直接套一堆方法的测试书本还是有区别的（我有段时间对那些大行方法论的人和事极度的厌烦）在两个字是充满敬意的，其中Know Your Mission 就是去了解需求，挖掘需求的实现，这是测试分析中重要且贯穿始终的一部分工作。而关于Test Coverage Outline 感觉这部分的内容虽然显得有点套模版的意思，但对于快速的去了解一个系统，达到提炼主要信息的目的还是很有帮助的，而对于紧接着的建模部分，其实就是在业务的基础上去用软件测试的基础理论方法，不管是从PPDCS的哪一个方面去做Modeling都不能脱离业务，脱离用户（发现GIVEN_WHEN_THEN的三段式是无处不在，无处不适用）Model是测试用例的先行者，好的Model可以更好的去完成整个用例的设计，其实对于测试的执行来说，只要看前面的工作够不够扎实。 我个人认为这样一个流程化的测试分析理论是可参考，可执行的。但在敏捷软件测试中，对于测试在整个软件生命周期的角色定位，我认为应该是在理论的基础上又基于经验的，这个经验不是测试人员的个人经验，而是这个测试流程的经验，是一个针对被测系统可以反馈梳理的闭环。就像本书一开始所强调的海盗派测试的核心原则一般： &amp;emsp;&amp;emsp;1.主动收集信息
+&amp;emsp;&amp;emsp;2.尽早提供反馈
+&amp;emsp;&amp;emsp;3.及时调整策略
+&amp;emsp;&amp;emsp;4.基于风险测试
+这二十四字箴言我觉的更加贴合敏捷软件测试的理念。</description>
     </item>
     
   </channel>

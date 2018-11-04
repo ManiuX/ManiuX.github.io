@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/javascript/</link>
+    <description>Recent content in Javascript on Maniux-learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://maniux.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>javascript 生成随机验证码</title>
+      <link>https://maniux.github.io/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/08/26/javascript-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81/</guid>
+      <description> canvas实现随机验证码图片小练习 通过canvas绘制验证码图片，通过在canvas区域绘制随机生成的文本字体，再增加一些干扰内容：
+写了一个简单的页面放进去啦 验证码
+js代码如下(只有生成验证图片的function )：
+function getPic(){ var cas=document.querySelector(&#39;#cas&#39;);//获取canvas 设置背景色； var ctx=cas.getContext(&#39;2d&#39;); var w=cas.width,h=cas.height; ctx.fillStyle=randomColor(150,250); ctx.fillRect(0,0,w,h); var str=&#39;abcdefghijklmnopqrstuvwxyz1234567890&#39;; for(let i=0; i&amp;lt;4; i++){//绘制随机文本； var fonts=str[randomNum(0,str.length)]; res.push(fonts); var x=w/5*i+10,y=h/10*i+30; ctx.fillStyle=randomColor(0,200); ctx.font=&#39;bold 40px Arial&#39;; ctx.fillText(fonts,x,y); } for(let i=0;i&amp;lt;200;i++){//绘制随机干扰点； ctx.beginPath(); ctx.arc(randomNum(0,w),randomNum(0,h),2,0,2*Math.PI); ctx.fillStyle=randomColor(0,200); ctx.fill(); } // res=fontt; } function randomNum(a,b){//生成(a,b)区间随机数； return Math.floor(Math.random()*(b-a)+a); } function randomColor(a,b){//生成随机rgb()颜色； var r=randomNum(a,b),g=randomNum(a,b),b=randomNum(a,b); return &#39;rgb(&#39;+r+&#39;,&#39;+g+&#39;,&#39;+b+&#39;)&#39;; }  </description>
+    </item>
+    
+    <item>
+      <title>javascript 实现双色球</title>
+      <link>https://maniux.github.io/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/04/20/javascript-%E5%AE%9E%E7%8E%B0%E5%8F%8C%E8%89%B2%E7%90%83/</guid>
+      <description> 双色球规则 1-33红球抽六个，1-16蓝球抽一个：
+嗯，买张彩票 没中！ 写了一个简单的页面放进去啦 双色球
+js代码如下：
+function getNum(){ var red=[],blue=[],res=[]; for (let i=1;i&amp;lt;34;i++){ red.push(i); } for (let i=1;i&amp;lt;17;i++){ blue.push(i); } for(let i=0;i&amp;lt;6;i++){ n=32-i; k=Math.ceil(Math.random()*n+0); res.push(red[k]); red.splice(k,1) } res.sort((a,b)=&amp;gt;(a-b)); k2=Math.ceil(Math.random()*15+0); res.push(blue[k2]); return res } console.log(getNum());  </description>
+    </item>
+    
+  </channel>
+</rss>

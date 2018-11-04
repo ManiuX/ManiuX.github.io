@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webdriver on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/webdriver/</link>
+    <description>Recent content in Webdriver on Maniux-learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://maniux.github.io/tags/webdriver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>webdriver 自动化测试小练习 （Python）</title>
+      <link>https://maniux.github.io/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/01/webdriver-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B0%8F%E7%BB%83%E4%B9%A0-python/</guid>
+      <description>Selenium Webdriver  创建测试用例  写一个简单的自动化测试例子如下图 测试套件中包括一个百度搜索的测试用例和一个在输入框上传文件的测试用例：
+ BaiduSearch  实现的功能非常简单 百度搜索关键字 PG one 下面是测试用例BaiduSearch.py的具体实现：
+ # -*- coding: utf-8 -*- from selenium import webdriver import unittest,time class Bai(unittest.TestCase): &#39;&#39;&#39;baidu test&#39;&#39;&#39; def setUp(self): self.driver=webdriver.Chrome() self.driver.maximize_window() self.driver.implicitly_wait(20) print(&#39;baidu test start&#39;) def test_bai(self): &#39;&#39;&#39;keyword PG one&#39;&#39;&#39; driver=self.driver driver.get(&#39;http://www.baidu.com&#39;) driver.find_element_by_id(&#39;kw&#39;).send_keys(&#39;PG one&#39;) driver.find_element_by_id(&#39;su&#39;).click() title=driver.title driver.get_screenshot_as_file(&#39;D:\\baidu.jpg&#39;) title=driver.title try: self.assertEqual(title,u&#39;PG one_百度搜索&#39;) print (&#39;The page title:&#39;+title) except: print(title) print(&#39;Get the wrong title&#39;) def tearDown(self): self.driver.quit() print(&#39;baidu test end&#39;) if __name__==&#39;__main__&#39;: unittest.</description>
+    </item>
+    
+  </channel>
+</rss>

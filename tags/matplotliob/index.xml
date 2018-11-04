@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matplotliob on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/matplotliob/</link>
+    <description>Recent content in Matplotliob on Maniux-learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://maniux.github.io/tags/matplotliob/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>matplotlib 数据可视化</title>
+      <link>https://maniux.github.io/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/22/matplotlib-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <description>matplotlib 柱状图练习 使用 requests 及BeautifulSoup 获取 旅游网站排行数据的前十位，使用 matplotlib 讲Alexa周排名用柱状图展示：
+python代码如下：
+# -*-coding:utf-8 -*- import requests from bs4 import BeautifulSoup import matplotlib.pyplot as plt def get_alexa(): # 获取旅游网站排行网页信息 url=&#39;http://top.chinaz.com/hangye/index_jiaotonglvyou_lvyou.html&#39; r=requests.get(url) res=r.content soup=BeautifulSoup(res,&#39;html.parser&#39;) # 获取榜上网站名称 x=[] name=soup.find_all(&#39;span&#39;,{&#39;class&#39;:&#39;col-gray&#39;}) for i in name: x.append(i.text) # 获取个网站的Alexa数值 div=soup.find_all(&#39;div&#39;,{&#39;class&#39;:&#39;RtCPart&#39;}) p=[] for i in div: item=i.find(&#39;p&#39;,{&#39;class&#39;:&#39;RtCData&#39;}) p.append(i) y=[] for i in p: num=int(i.find(&#39;a&#39;).text) y.append(num) # 获取排行前十 xx=tuple(x[1:11]) yy=y[0:10] # 画图 plt.title(&#39;Ranking of Alexa&#39;) r=range(1,11) plt.bar(r,yy) plt.xticks(r, xx, rotation=20) plt.</description>
+    </item>
+    
+  </channel>
+</rss>

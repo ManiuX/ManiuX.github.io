@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/python/</link>
+    <description>Recent content in Python on Maniux-learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://maniux.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python requests 获取招聘信息</title>
+      <link>https://maniux.github.io/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/10/python-requests-%E8%8E%B7%E5%8F%96%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF/</guid>
+      <description>获取校园网的招聘信息 前两天大概了解了一下 requests 库，写个小练习吧 获取校园就业网站的招聘信息,下面是就业网的招聘 板块的html, 先找到 所有信息的父元素 也就是 类名为 arcList 的div ,然后在这个div里找到所有的li 元素的文本信息就是想要的招聘信息啦：
+&amp;lt;div class=&amp;quot;arcList&amp;quot;&amp;gt; &amp;lt;h2 class=&amp;quot;alTitle&amp;quot;&amp;gt;招聘信息&amp;lt;/h2&amp;gt; &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-10&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44392.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;和记奥普泰通信技术有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-10&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44391.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;中国航发商用航空发动机有限责任公司2017年企业开放日活动邀请函&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44388.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;众微致成（北京）信息服务有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44387.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;中国平安财产保险股份有限公司&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44386.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;国家超级计算济南中心_山东省科学院_山东省计算中心_人才引进&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44385.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;蒂森克虏伯电梯-培训生（菁才训练营）&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44384.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;电子科技大学2017年面向海内外诚聘博士后&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44383.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;西安中科光电精密工程有限公司招聘启事&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;quot;time&amp;quot;&amp;gt;2017-07-07&amp;lt;/span&amp;gt;&amp;lt;img src=&amp;quot;/image/aa.gif&amp;quot; width=&amp;quot;7&amp;quot; height=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/html/zpxx/jobs/44382.</description>
+    </item>
+    
+  </channel>
+</rss>

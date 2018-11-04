@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>海盗派测试分析读书笔记</title>
+        <style>
+
+    html body {
+        font-family: 'Mina', sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    :root {
+        --accent: #2d2026;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/lakeside-light.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maniux.github.io/css/main.css">
+
+
+
+
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+<script>
+$(document).ready(function(){
+    
+  var input = $('#night-mode-toggle');
+  var container = $('#bigbody');
+  var stat = $('#button-status');
+  
+  container.toggleClass(localStorage.toggled);
+  stat.bootstrapToggle(localStorage.button).change();
+  
+  input.on('click', function() {
+      if (localStorage.toggled != "-nightmode" ) {
+          container.toggleClass("-nightmode", true );
+          localStorage.toggled = "-nightmode";
+          localStorage.button = "on";
+       } else {
+          container.toggleClass("-nightmode", false );
+          localStorage.toggled = "";
+          localStorage.button = "off"
+       }
+  })
+});
+</script>
+ <meta name="generator" content="Hugo 0.49.2" />
+        
+        
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <meta property="og:title" content="海盗派测试分析读书笔记">
+    <meta property="og:type" content="article">
+      
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://maniux.github.ioimg/large_card.png" >
+      
+    <meta property="description" content="Summary of the post">
+    <meta property="og:description" content="Summary of the post">
+    
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:site" content="">
+    
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body id = "bigbody">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">海盗派测试分析读书笔记</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/tags/">Tags</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="hy530k@163.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ManiuX"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href=""><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                            <li id="night-mode-toggle">
+    <input type="checkbox" id = "button-status"
+        data-toggle="toggle"
+        data-width = "10"
+        data-height = "1"
+        data-on="<i class='fa fa-moon-o fa-lg' style='vertical-align:25%'></i>"
+        data-off= "<i class='fa fa-sun-o fa-lg' style='vertical-align:25%'></i>"
+        data-style="ios"
+        data-onstyle = "default">
+</li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+      
+      
+    
+
+    <h4><a href="/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">海盗派测试分析读书笔记</a></h4>
+    <h5>September 28, 2018 - 1 minutes</h5>
+    <h5>Summary of the post</h5>
+
+    
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95">
+        <kbd class="item-tag"> 测试 </kbd>
+    </a>
+    
+    <a href="/tags/%E7%AC%94%E8%AE%B0">
+        <kbd class="item-tag"> 笔记 </kbd>
+    </a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h2 id="海盗派测试分析-mfq-ppdcs">海盗派测试分析：MFQ&amp;PPDCS</h2>
+
+<hr />
+
+<p>《海盗派测试分析》是我的buddy推荐给我的必读书单其中的一本，卡哇伊的封面，有趣的书名，和书中简单的插图都让这本书读起来不是那么的晦涩，书中提到的MFQ框架的总结还是非常受用的。</p>
+
+<p><img src="https://github.com/ManiuX/imageSrc/blob/master/MFQ&PPDCS.png?raw=true"></p>
+
+<p>这为我们在做测试的时候由整体的细节的理论去分析提供了简洁清晰的思路。</p>
+
+<p>这本书中的五个话题都围绕着需求展开进行，与那些上来直接套一堆方法的测试书本还是有区别的（我有段时间对那些大行方法论的人和事极度的厌烦）在两个字是充满敬意的，其中Know Your Mission 就是去了解需求，挖掘需求的实现，这是测试分析中重要且贯穿始终的一部分工作。而关于Test Coverage Outline 感觉这部分的内容虽然显得有点套模版的意思，但对于快速的去了解一个系统，达到提炼主要信息的目的还是很有帮助的，而对于紧接着的建模部分，其实就是在业务的基础上去用软件测试的基础理论方法，不管是从PPDCS的哪一个方面去做Modeling都不能脱离业务，脱离用户（发现GIVEN_WHEN_THEN的三段式是无处不在，无处不适用）Model是测试用例的先行者，好的Model可以更好的去完成整个用例的设计，其实对于测试的执行来说，只要看前面的工作够不够扎实。<br/>
+我个人认为这样一个流程化的测试分析理论是可参考，可执行的。但在敏捷软件测试中，对于测试在整个软件生命周期的角色定位，我认为应该是在理论的基础上又基于经验的，这个经验不是测试人员的个人经验，而是这个测试流程的经验，是一个针对被测系统可以反馈梳理的闭环。就像本书一开始所强调的海盗派测试的核心原则一般：<br/>
+    &emsp;&emsp;1.主动收集信息<br>
+    &emsp;&emsp;2.尽早提供反馈<br>
+    &emsp;&emsp;3.及时调整策略<br>
+    &emsp;&emsp;4.基于风险测试<br>
+这二十四字箴言我觉的更加贴合敏捷软件测试的理念。</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+      
+    
+
+    <h4><a href="/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/">Selenium webdriver 元素定位</a></h4>
+    <h5>July 5, 2017 - 1 minutes</h5>
+    <h5></h5>
+
+    
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95">
+        <kbd class="item-tag"> 测试 </kbd>
+    </a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+      
+    
+
+    <h4><a href="/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/">关于手工测试的小小感想</a></h4>
+    <h5>June 5, 2017 - 1 minutes</h5>
+    <h5></h5>
+
+    
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95">
+        <kbd class="item-tag"> 测试 </kbd>
+    </a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+</main>
+
+        <footer id = "bigfooter">
+            <div style = "padding:15px;">
+                <p>Powered by <a href="https://gohugo.io">Hugo</a>. Themed by <a href="https://github.com/nathancday/min_night">min_night</a>.
+                </p>
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"
+                title="Creative Commons Attribution 4.0 International license">
+                <i class="fa fa-creative-commons" aria-hidden="true"></i> Attribution 4.0 International license
+                </a>
+            </div>
+        </footer>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', '');
+        </script>
+       
+    </body>
+
+</html>
+

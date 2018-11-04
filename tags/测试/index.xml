@@ -1,23 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>测试 on Maniux-BBB</title>
-    <link>/tags/%E6%B5%8B%E8%AF%95/</link>
-    <description>Recent content in 测试 on Maniux-BBB</description>
+    <title>测试 on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content in 测试 on Maniux-learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://maniux.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>海盗派测试读书笔记</title>
-      <link>/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <title>Selenium webdriver 元素定位</title>
+      <link>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</guid>
+      <description>页面元素定位 归纳一下selenium 定位页面元素的方法：
+以百度首页的搜索框为例 &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;s_ipt&amp;quot; name=&amp;quot;wd&amp;quot; id=&amp;quot;kw&amp;quot; maxlength=&amp;quot;100&amp;quot; autocomplete=&amp;quot;off&amp;quot;&amp;gt;  1.find_element_by_id:
+id 是页面中元素的唯一标示符，也就是在一个html结构中同一个id只允许出现一次，定位起来还是比较方便的 这里要通过id定位搜索框 就是 find_element_by_id(&amp;lsquo;kw&amp;rsquo;) 2.find_element_by_name:
+name 属性用来指定标签的名称，在同一个表单中 同一name只允许出现一次，着了input 的name属性为&amp;rsquo;wd&amp;rsquo;,通过name定位 就是 find_element_by_name(&amp;lsquo;wd&amp;rsquo;) 3.find_element_by_xpath:
+xpath相对其他几种方法较为复杂也非常的强大 后面会再做笔记 这里通过xpath 定位搜索框使用 find_element_by_xpath(&amp;lsquo;//*[@id=&amp;ldquo;kw&amp;rdquo;]&amp;lsquo;) 4.find_element_by_link_text:
+link_text 一般针对超链接标签
+&amp;lt;a href=&amp;quot;http://www.hao123.com&amp;quot; target=&amp;quot;_blank&amp;quot; class=&amp;quot;mnav&amp;quot;&amp;gt;hao123&amp;lt;/a&amp;gt;  这个链接的文本为 hao123 所以可以使用 find_element_by_link_text(&amp;lsquo;hao123&amp;rsquo;) 来定位到此链接元素 5.find_element_by_partial_link_text:
+这个方法与上边的区别就是 文本信息只要是 链接文本的子集就可以查找到 例如 find_element_by_partial_link_text(&amp;lsquo;hao&amp;rsquo;) 6.find_element_by_class_name:
+这个任然以百度搜索为例 class为元素的类名 而类名一般是多个元素 属于同一类，使用类名定位可能会定位到多个元素 find_element_by_class_name(&amp;rsquo;s_ipt&amp;rsquo;) 7.find_element_by_tag_name:
+tagname位元素的标签名 往往在html中 同一个标签会出现多次 ，所以使用标签名也会定位到一组多个元素 find_element_by_tag_name(&amp;lsquo;input&amp;rsquo;) 8.find_element_by_css_selector:
+css选择器 同样设计到 通过 id,class 等多种方法 使用比较方便 这里简单的写一下 css 通过 class 定位 对于css 选择器的笔记以后再补吧：</description>
+    </item>
+    
+    <item>
+      <title>关于手工测试的小小感想</title>
+      <link>https://maniux.github.io/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/06/05/%E5%85%B3%E4%BA%8E%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B0%8F%E5%B0%8F%E6%84%9F%E6%83%B3/</guid>
+      <description>功能测试之手工测试 1.大多数人眼中的测试：
+2.程序员眼中的测试：
+3.测试的内心：</description>
+    </item>
+    
+    <item>
+      <title>海盗派测试分析读书笔记</title>
+      <link>https://maniux.github.io/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>gitment 项目地址gitment 膜拜大神非常简单好用的评论方式</description>
+      <guid>https://maniux.github.io/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>海盗派测试分析：MFQ&amp;amp;PPDCS 《海盗派测试分析》是我的buddy推荐给我的必读书单其中的一本，卡哇伊的封面，有趣的书名，和书中简单的插图都让这本书读起来不是那么的晦涩，书中提到的MFQ框架的总结还是非常受用的。
+这为我们在做测试的时候由整体的细节的理论去分析提供了简洁清晰的思路。
+这本书中的五个话题都围绕着需求展开进行，与那些上来直接套一堆方法的测试书本还是有区别的（我有段时间对那些大行方法论的人和事极度的厌烦）在两个字是充满敬意的，其中Know Your Mission 就是去了解需求，挖掘需求的实现，这是测试分析中重要且贯穿始终的一部分工作。而关于Test Coverage Outline 感觉这部分的内容虽然显得有点套模版的意思，但对于快速的去了解一个系统，达到提炼主要信息的目的还是很有帮助的，而对于紧接着的建模部分，其实就是在业务的基础上去用软件测试的基础理论方法，不管是从PPDCS的哪一个方面去做Modeling都不能脱离业务，脱离用户（发现GIVEN_WHEN_THEN的三段式是无处不在，无处不适用）Model是测试用例的先行者，好的Model可以更好的去完成整个用例的设计，其实对于测试的执行来说，只要看前面的工作够不够扎实。 我个人认为这样一个流程化的测试分析理论是可参考，可执行的。但在敏捷软件测试中，对于测试在整个软件生命周期的角色定位，我认为应该是在理论的基础上又基于经验的，这个经验不是测试人员的个人经验，而是这个测试流程的经验，是一个针对被测系统可以反馈梳理的闭环。就像本书一开始所强调的海盗派测试的核心原则一般： &amp;emsp;&amp;emsp;1.主动收集信息
+&amp;emsp;&amp;emsp;2.尽早提供反馈
+&amp;emsp;&amp;emsp;3.及时调整策略
+&amp;emsp;&amp;emsp;4.基于风险测试
+这二十四字箴言我觉的更加贴合敏捷软件测试的理念。</description>
     </item>
     
   </channel>

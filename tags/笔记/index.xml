@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>笔记 on Maniux-learning</title>
+    <link>https://maniux.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 笔记 on Maniux-learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://maniux.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>海盗派测试分析读书笔记</title>
+      <link>https://maniux.github.io/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2018/09/28/%E6%B5%B7%E7%9B%97%E6%B4%BE%E6%B5%8B%E8%AF%95%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>海盗派测试分析：MFQ&amp;amp;PPDCS 《海盗派测试分析》是我的buddy推荐给我的必读书单其中的一本，卡哇伊的封面，有趣的书名，和书中简单的插图都让这本书读起来不是那么的晦涩，书中提到的MFQ框架的总结还是非常受用的。
+这为我们在做测试的时候由整体的细节的理论去分析提供了简洁清晰的思路。
+这本书中的五个话题都围绕着需求展开进行，与那些上来直接套一堆方法的测试书本还是有区别的（我有段时间对那些大行方法论的人和事极度的厌烦）在两个字是充满敬意的，其中Know Your Mission 就是去了解需求，挖掘需求的实现，这是测试分析中重要且贯穿始终的一部分工作。而关于Test Coverage Outline 感觉这部分的内容虽然显得有点套模版的意思，但对于快速的去了解一个系统，达到提炼主要信息的目的还是很有帮助的，而对于紧接着的建模部分，其实就是在业务的基础上去用软件测试的基础理论方法，不管是从PPDCS的哪一个方面去做Modeling都不能脱离业务，脱离用户（发现GIVEN_WHEN_THEN的三段式是无处不在，无处不适用）Model是测试用例的先行者，好的Model可以更好的去完成整个用例的设计，其实对于测试的执行来说，只要看前面的工作够不够扎实。 我个人认为这样一个流程化的测试分析理论是可参考，可执行的。但在敏捷软件测试中，对于测试在整个软件生命周期的角色定位，我认为应该是在理论的基础上又基于经验的，这个经验不是测试人员的个人经验，而是这个测试流程的经验，是一个针对被测系统可以反馈梳理的闭环。就像本书一开始所强调的海盗派测试的核心原则一般： &amp;emsp;&amp;emsp;1.主动收集信息
+&amp;emsp;&amp;emsp;2.尽早提供反馈
+&amp;emsp;&amp;emsp;3.及时调整策略
+&amp;emsp;&amp;emsp;4.基于风险测试
+这二十四字箴言我觉的更加贴合敏捷软件测试的理念。</description>
+    </item>
+    
+  </channel>
+</rss>
