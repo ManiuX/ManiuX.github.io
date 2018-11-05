@@ -6,10 +6,21 @@
     <description>Recent content in 笔记 on Maniux-learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://maniux.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>探索式软件测试读书笔记</title>
+      <link>https://maniux.github.io/2018/11/04/%E6%8E%A2%E7%B4%A2%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2018/11/04/%E6%8E%A2%E7%B4%A2%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>探索式软件测试 《探索式软件测试》是清华大学出版的，作者为手工测试提供了一套可行的方法。
+-- 手工测试在目前的软件开发流程中是不可或缺的工作，但往往手工测试的影响因素有太多太多，书中提到的缺陷预防和检测策略给出了手工测试保证质量较好的方式。
+对于局部探索式测试法则是从用户输入，软件状态，代码路径，用户数据，软件运行环境几个方面都给出了对应的策略，探索式测试不是无规矩所寻的试错，是能将每一方面的因素影响可以有效结合起来去做测试(待更新)。</description>
+    </item>
     
     <item>
       <title>海盗派测试分析读书笔记</title>
