@@ -6,10 +6,29 @@
     <description>Recent content in Webdriver on Maniux-learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://maniux.github.io/tags/webdriver/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Selenium webdriver 元素定位</title>
+      <link>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</guid>
+      <description>页面元素定位 归纳一下selenium 定位页面元素的方法：
+以百度首页的搜索框为例 &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;s_ipt&amp;quot; name=&amp;quot;wd&amp;quot; id=&amp;quot;kw&amp;quot; maxlength=&amp;quot;100&amp;quot; autocomplete=&amp;quot;off&amp;quot;&amp;gt;  1.find_element_by_id:
+id 是页面中元素的唯一标示符，也就是在一个html结构中同一个id只允许出现一次，定位起来还是比较方便的 这里要通过id定位搜索框 就是 find_element_by_id(&amp;lsquo;kw&amp;rsquo;) 2.find_element_by_name:
+name 属性用来指定标签的名称，在同一个表单中 同一name只允许出现一次，着了input 的name属性为&amp;rsquo;wd&amp;rsquo;,通过name定位 就是 find_element_by_name(&amp;lsquo;wd&amp;rsquo;) 3.find_element_by_xpath:
+xpath相对其他几种方法较为复杂也非常的强大 后面会再做笔记 这里通过xpath 定位搜索框使用 find_element_by_xpath(&amp;lsquo;//*[@id=&amp;ldquo;kw&amp;rdquo;]&amp;lsquo;) 4.find_element_by_link_text:
+link_text 一般针对超链接标签
+&amp;lt;a href=&amp;quot;http://www.hao123.com&amp;quot; target=&amp;quot;_blank&amp;quot; class=&amp;quot;mnav&amp;quot;&amp;gt;hao123&amp;lt;/a&amp;gt;  这个链接的文本为 hao123 所以可以使用 find_element_by_link_text(&amp;lsquo;hao123&amp;rsquo;) 来定位到此链接元素 5.find_element_by_partial_link_text:
+这个方法与上边的区别就是 文本信息只要是 链接文本的子集就可以查找到 例如 find_element_by_partial_link_text(&amp;lsquo;hao&amp;rsquo;) 6.find_element_by_class_name:
+这个任然以百度搜索为例 class为元素的类名 而类名一般是多个元素 属于同一类，使用类名定位可能会定位到多个元素 find_element_by_class_name(&amp;rsquo;s_ipt&amp;rsquo;) 7.find_element_by_tag_name:
+tagname位元素的标签名 往往在html中 同一个标签会出现多次 ，所以使用标签名也会定位到一组多个元素 find_element_by_tag_name(&amp;lsquo;input&amp;rsquo;) 8.find_element_by_css_selector:
+css选择器 同样设计到 通过 id,class 等多种方法 使用比较方便 这里简单的写一下 css 通过 class 定位 对于css 选择器的笔记以后再补吧：</description>
+    </item>
     
     <item>
       <title>webdriver 自动化测试小练习 （Python）</title>

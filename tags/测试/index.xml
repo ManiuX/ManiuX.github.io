@@ -6,29 +6,10 @@
     <description>Recent content in 测试 on Maniux-learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://maniux.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Selenium webdriver 元素定位</title>
-      <link>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</link>
-      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://maniux.github.io/2017/07/05/selenium-webdriver-%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</guid>
-      <description>页面元素定位 归纳一下selenium 定位页面元素的方法：
-以百度首页的搜索框为例 &amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;s_ipt&amp;quot; name=&amp;quot;wd&amp;quot; id=&amp;quot;kw&amp;quot; maxlength=&amp;quot;100&amp;quot; autocomplete=&amp;quot;off&amp;quot;&amp;gt;  1.find_element_by_id:
-id 是页面中元素的唯一标示符，也就是在一个html结构中同一个id只允许出现一次，定位起来还是比较方便的 这里要通过id定位搜索框 就是 find_element_by_id(&amp;lsquo;kw&amp;rsquo;) 2.find_element_by_name:
-name 属性用来指定标签的名称，在同一个表单中 同一name只允许出现一次，着了input 的name属性为&amp;rsquo;wd&amp;rsquo;,通过name定位 就是 find_element_by_name(&amp;lsquo;wd&amp;rsquo;) 3.find_element_by_xpath:
-xpath相对其他几种方法较为复杂也非常的强大 后面会再做笔记 这里通过xpath 定位搜索框使用 find_element_by_xpath(&amp;lsquo;//*[@id=&amp;ldquo;kw&amp;rdquo;]&amp;lsquo;) 4.find_element_by_link_text:
-link_text 一般针对超链接标签
-&amp;lt;a href=&amp;quot;http://www.hao123.com&amp;quot; target=&amp;quot;_blank&amp;quot; class=&amp;quot;mnav&amp;quot;&amp;gt;hao123&amp;lt;/a&amp;gt;  这个链接的文本为 hao123 所以可以使用 find_element_by_link_text(&amp;lsquo;hao123&amp;rsquo;) 来定位到此链接元素 5.find_element_by_partial_link_text:
-这个方法与上边的区别就是 文本信息只要是 链接文本的子集就可以查找到 例如 find_element_by_partial_link_text(&amp;lsquo;hao&amp;rsquo;) 6.find_element_by_class_name:
-这个任然以百度搜索为例 class为元素的类名 而类名一般是多个元素 属于同一类，使用类名定位可能会定位到多个元素 find_element_by_class_name(&amp;rsquo;s_ipt&amp;rsquo;) 7.find_element_by_tag_name:
-tagname位元素的标签名 往往在html中 同一个标签会出现多次 ，所以使用标签名也会定位到一组多个元素 find_element_by_tag_name(&amp;lsquo;input&amp;rsquo;) 8.find_element_by_css_selector:
-css选择器 同样设计到 通过 id,class 等多种方法 使用比较方便 这里简单的写一下 css 通过 class 定位 对于css 选择器的笔记以后再补吧：</description>
-    </item>
     
     <item>
       <title>关于手工测试的小小感想</title>
@@ -49,7 +30,12 @@ css选择器 同样设计到 通过 id,class 等多种方法 使用比较方便 
       <guid>https://maniux.github.io/2018/11/04/%E6%8E%A2%E7%B4%A2%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
       <description>探索式软件测试 《探索式软件测试》是清华大学出版的，作者为手工测试提供了一套可行的方法。
 -- 手工测试在目前的软件开发流程中是不可或缺的工作，但往往手工测试的影响因素有太多太多，书中提到的缺陷预防和检测策略给出了手工测试保证质量较好的方式。
-对于局部探索式测试法则是从用户输入，软件状态，代码路径，用户数据，软件运行环境几个方面都给出了对应的策略，探索式测试不是无规矩所寻的试错，是能将每一方面的因素影响可以有效结合起来去做测试(待更新)。</description>
+对于局部探索式测试法则是从用户输入，软件状态，代码路径，用户数据，软件运行环境几个方面都给出了对应的策略，探索式测试不是无规矩所循的试错，是能将每一方面的因素影响可以有效结合起来去做测试。 而让我觉得有趣的是作者对全局探索测试的几种方法的总结，虽然对与这几类总结会有不可避免的交叉部分，但这样的划分也让探索式软件测试这个名词看上去更接近本意了一些，可能大多数的测试人员在做测试的时候都会做这几个方面的测试工作，但少有人会发挥脑细胞去做这样一个类比和总结，我认同把测试的软件大致分为这几种区域 但对于每个区域下限定的方法我要保留意见（之前说过我对方法论嗤之以鼻呀！）。
+  当然书中在探索式软件测试的实践部分提到的基于场景的测试方法这部分还是给了我一定的启发，通过场景操作引入变化，进而实现测试。就像书中也提到的关于软件测试五个棘手的问题： 1 漫无目的
+2 重复性
+3 暂时性
+4 单调性
+5 健忘性  其中对于漫无目的这一条我觉得这是对测试的一种不正确的认识，即使在敏捷软件流程中提倡有效的过程而非复杂的文档，但对测试来说不是说没有目标的去实现，一定有一个可指导的大纲或者一份简单的测试用例去明确要测试什么，或者即使没有一个类似文档的规约，做到心中有数也是对测试人员素质的考量，所以我并不认为漫无目的是手工测试的缺陷，这是对软件测试的偏见之谈。 而我更想去学习和探究的是在手工测试中如何更好的去解决重复性，回归测试在软件测试中也是很重要的部分，是时候拿出测试金字塔来说一说了，其实这本书意外的没有提到测试金字塔的内容，可能因为作者默认了探索式测试是处于测试金字塔的顶端吧，从金字塔的角度再去考虑重复性，再来思考探索性测试在回归测试中应该占的比重和需要做的工作（其实这块还是要根据具体项目吧？）。</description>
     </item>
     
     <item>
